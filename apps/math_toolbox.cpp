@@ -846,7 +846,18 @@ const ToolboxMessageTree Physics[] = {
   ToolboxMessageTree::Node(I18n::Message::PlanckUnitsTag, PlanckUnits),
 };
 
+const ToolboxMessageTree Si[] = {
+  ToolboxMessageTree::Node(I18n::Message::Auto, Automatique),
+  ToolboxMessageTree::Node(I18n::Message::Meca, Meca),
+};
 
+const ToolboxMessageTree Auto[] = {
+  ToolboxMessageTree::Leaf(I18n::Message::TestAutoTag, I18n::Message::SunMass, false, I18n::Message::SunMass),
+};
+
+const ToolboxMessageTree Meca[] = {
+  ToolboxMessageTree::Leaf(I18n::Message::TestMecaTag, I18n::Message::TestMeca, false, I18n::Message::TestMeca),
+};
 
 const ToolboxMessageTree menu[] = {
   ToolboxMessageTree::Leaf(I18n::Message::AbsCommandWithArg, I18n::Message::AbsoluteValue),
@@ -926,4 +937,3 @@ int MathToolbox::indexAfterFork() const {
     assert(unitFormat == Preferences::UnitFormat::Imperial);
     return 1;
 }
-
