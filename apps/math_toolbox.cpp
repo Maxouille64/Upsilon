@@ -668,6 +668,19 @@ const ToolboxMessageTree chemistry[] = {
   ToolboxMessageTree::Node(I18n::Message::Pka, Pka),
 };
 
+const ToolboxMessageTree Automatik[] = {
+  ToolboxMessageTree::Leaf(I18n::Message::TestAuto, I18n::Message::TestAutoValue, false, I18n::Message::TestAutoValue)
+};
+
+const ToolboxMessageTree Mecanik[] = {
+  ToolboxMessageTree::Leaf(I18n::Message::TestMeca, I18n::Message::TestMecaValue, false, I18n::Message::TestMecaValue)
+};
+
+const ToolboxMessageTree Sii[] = {
+  ToolboxMessageTree::Node(I18n::Message::Automatik, Automatik),
+  ToolboxMessageTree::Node(I18n::Message::Mecanik, Mecanik)
+};
+
 const ToolboxMessageTree FundamentalConstants[] = {
   ToolboxMessageTree::Leaf(I18n::Message::SpeedOfLightTag, I18n::Message::SpeedOfLight, false, I18n::Message::SpeedOfLight),
   ToolboxMessageTree::Leaf(I18n::Message::Vacuum_permittivityTag, I18n::Message::Vacuum_permittivity, false, I18n::Message::Vacuum_permittivity),
@@ -846,19 +859,6 @@ const ToolboxMessageTree Physics[] = {
   ToolboxMessageTree::Node(I18n::Message::PlanckUnitsTag, PlanckUnits),
 };
 
-const ToolboxMessageTree Si[] = {
-  ToolboxMessageTree::Node(I18n::Message::Auto, Automatique),
-  ToolboxMessageTree::Node(I18n::Message::Meca, Meca),
-};
-
-const ToolboxMessageTree Auto[] = {
-  ToolboxMessageTree::Leaf(I18n::Message::TestAutoTag, I18n::Message::SunMass, false, I18n::Message::SunMass),
-};
-
-const ToolboxMessageTree Meca[] = {
-  ToolboxMessageTree::Leaf(I18n::Message::TestMecaTag, I18n::Message::TestMeca, false, I18n::Message::TestMeca),
-};
-
 const ToolboxMessageTree menu[] = {
   ToolboxMessageTree::Leaf(I18n::Message::AbsCommandWithArg, I18n::Message::AbsoluteValue),
   ToolboxMessageTree::Leaf(I18n::Message::RootCommandWithArg, I18n::Message::NthRoot),
@@ -878,6 +878,7 @@ const ToolboxMessageTree menu[] = {
   ToolboxMessageTree::Node(I18n::Message::HyperbolicTrigonometry, trigonometryChildren),
   ToolboxMessageTree::Node(I18n::Message::Fluctuation, predictionChildren),
   ToolboxMessageTree::Node(I18n::Message::Chemistry, chemistry),
+  ToolboxMessageTree::Node(I18n::Message::Sii, Sii),
   ToolboxMessageTree::Node(I18n::Message::Physics, Physics)
   };
 
