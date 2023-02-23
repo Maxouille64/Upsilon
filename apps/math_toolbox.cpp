@@ -673,7 +673,8 @@ const ToolboxMessageTree Automatik[] = {
 };
 
 const ToolboxMessageTree Mecanik[] = {
-  ToolboxMessageTree::Leaf(I18n::Message::TestMeca, I18n::Message::TestMecaValue, false, I18n::Message::TestMecaValue)
+  ToolboxMessageTree::Leaf(I18n::Message::TestMeca, I18n::Message::TestMecaValue, false, I18n::Message::TestMecaValue),
+  ToolboxMessageTree::Leaf(I18n::Message::huyTag, I18n::Message::huy, false, I18n::Message::huy),
 };
 
 const ToolboxMessageTree Sii[] = {
@@ -800,6 +801,9 @@ const ToolboxMessageTree Nuclear[] = {
 const ToolboxMessageTree Gravitation[] = {
   ToolboxMessageTree::Leaf(I18n::Message::GAccelerationTag, I18n::Message::GAcceleration, false, I18n::Message::GAcceleration),
   ToolboxMessageTree::Leaf(I18n::Message::GConstantTag, I18n::Message::GConstant, false, I18n::Message::GConstant),
+  ToolboxMessageTree::Leaf(I18n::Message::tlkTag, I18n::Message::tlk, false, I18n::Message::tlk),
+  ToolboxMessageTree::Leaf(I18n::Message::cda, I18n::Message::cdaValue, false, I18n::Message::cdaValue),
+
 };
 
 
@@ -846,7 +850,16 @@ const ToolboxMessageTree PlanckUnits[] = {
   ToolboxMessageTree::Leaf(I18n::Message::PlanckImpedanceTag, I18n::Message::PlanckImpedance, false, I18n::Message::PlanckImpedance),
 };
 
+const ToolboxMessageTree MecaPhys[] = {
+  ToolboxMessageTree::Leaf(I18n::Message::AccCyl, I18n::Message::AccCylValue, false, I18n::Message::AccCylValue),
+  ToolboxMessageTree::Leaf(I18n::Message::MomTag, I18n::Message::Mom, false, I18n::Message::Mom),
+  ToolboxMessageTree::Leaf(I18n::Message::MomCinTag, I18n::Message::MomCin, false, I18n::Message::MomCin),
+  ToolboxMessageTree::Leaf(I18n::Message::EcAxeTag, I18n::Message::EcAxe, false, I18n::Message::EcAxe),
+  ToolboxMessageTree::Leaf(I18n::Message::pamTag, I18n::Message::pam, false, I18n::Message::pam),
+};
+
 const ToolboxMessageTree Physics[] = {
+  ToolboxMessageTree::Node(I18n::Message::MecaPhys, MecaPhys),
   ToolboxMessageTree::Node(I18n::Message::FundamentalConstants, FundamentalConstants),
   ToolboxMessageTree::Node(I18n::Message::Electromagnetism, Electromagnetism),
   ToolboxMessageTree::Node(I18n::Message::Electricity, Electricity),
