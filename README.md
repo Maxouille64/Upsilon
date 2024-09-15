@@ -1,4 +1,4 @@
-Add memos and formulas in Math,Physics,Engineering and CS to the Upsilon OS for the numworks calculator
+<p>Add memos and formulas in Math,Physics,Engineering and CS to the Upsilon OS for the numworks calculator</p>
 
-original: https://github.com/UpsilonNumworks/Upsilon
-numworks: https://www.numworks.com/
+<p>original: https://github.com/UpsilonNumworks/Upsilon</p>
+<p>numworks: https://www.numworks.com/</p>
